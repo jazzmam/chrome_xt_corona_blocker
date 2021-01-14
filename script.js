@@ -8,7 +8,6 @@ function replaceText(element) {
         if (element.textContent.match(/covid-19|coronavirus|koronavir|corona/gi)) {
             element.parentElement.remove();
         }
-        /*element.textContent = element.textContent.replace(/covid-19|coronavirus|koronavir|corona/gi, 'TEXT')*/
     }
 }
 
@@ -17,8 +16,8 @@ let div = document.createElement("div");
 div.classList.add('floating-btn-switch');
 div.id = "floating-btn-switch";
 
-let i = document.createElement("i");
-i.classList.add('fa', 'fa-plus');
+let img = document.createElement("img");
+img.src = 'https://i.pinimg.com/originals/f0/e1/8a/f0e18a5eec5f034b4bf92ea25ccc7d48.png';
 
 document.body.appendChild(div);
-div.appendChild(i);
+div.appendChild(img);
