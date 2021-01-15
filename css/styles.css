@@ -32,7 +32,7 @@
 	color: #fff;
 }
 
-.vertical-line {
+.button-stroke {
 	position: absolute;
 	background-color: blue;
 	width: 6px;

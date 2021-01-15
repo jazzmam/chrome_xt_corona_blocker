@@ -20,7 +20,10 @@ divButton.id = "floating-btn-switch";
 let img = document.createElement("img");
 img.src = 'https://londonvetspecialists.vet/wp-content/uploads/2020/04/covid-icon.png';
 
-
+// Button stroke
+let divStroke = document.createElement("div");
+divStroke.classList.add('button-stroke');
+divStroke.id = "button-stroke";
 
 document.body.appendChild(divButton);
 divButton.appendChild(img);
