@@ -3,19 +3,13 @@
 	margin: 0;
 }
 
-body {
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 18px;
-	background-color: #CCC;
-}
-
 .floating-btn-switch {
 	position: fixed;
-	width: 60px;
-	height: 60px;
+	width: 65px;
+    height: 65px;
 	top: 130px;
 	right: 130px;
-	background-color: #0C9;
+	background-color: #00aee3;
 	color: #FFF;
 	border-radius: 50px;
 	text-align: center;
@@ -23,8 +17,26 @@ body {
 	z-index: 100;
 }
 
-.floating-btn-switch img {
-	width: 45px;
-	height: 45px;
-	margin: 8px;
+.floating-btn-switch:hover {
+	background-color: #0085ad;
 }
+
+.floating-btn-switch:active {
+	transform: scale(0.9);
+}
+
+.floating-btn-switch img {
+	width: 35px;
+    height: 35px;
+    margin: 15px;
+	color: #fff;
+}
+
+.vertical-line {
+	position: absolute;
+	background-color: blue;
+	width: 6px;
+	top: 91px;
+	bottom: 0px;
+	left: 50%;
+  }
