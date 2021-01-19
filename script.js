@@ -1,4 +1,4 @@
-replaceText(document.body);
+//replaceText(document.body);
 
 // Hiding text that is covid-related
 function replaceText(element) {
@@ -12,7 +12,10 @@ function replaceText(element) {
 }
 
 function changeArticlesDisplay() {
-    
+    console.log("dfd");
+
+
+    replaceText(document.body);
 }
 
 // Floating button
@@ -34,4 +37,6 @@ divButton.appendChild(img);
 divButton.appendChild(divStroke);
 
 
-divButton.addEventListener("click", changeArticlesDisplay);
+//document.getElementById("floating-btn-switch").addEventListener("click", replaceText(document.body));
+
+document.getElementById("floating-btn-switch").addEventListener("click", changeArticlesDisplay);
