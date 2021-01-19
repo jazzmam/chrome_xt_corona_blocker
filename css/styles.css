@@ -33,10 +33,9 @@
 }
 
 .button-stroke {
-	display: none;
 	position: fixed;
 	width: 65px;
-	height: 7px;
+	height: 5px;
 	top: 160px;
 	right: 130px;
 	background-color: #0077b6;

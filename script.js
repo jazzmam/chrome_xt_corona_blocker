@@ -1,9 +1,12 @@
-//replaceText(document.body);
 
 // Hiding text that is covid-related
-function replaceText(element) {
+function hideText(element) {
+
+    // Hiding stroke line of the button
+    document.getElementById("button-stroke").style.display = 'none';
+
     if (element.hasChildNodes()) {
-        element.childNodes.forEach(replaceText)
+        element.childNodes.forEach(hideText)
     } else if (element.nodeType === Text.TEXT_NODE) {
         if (element.textContent.match(/covid-19|coronavirus|koronavir|pendem|corona/gi)) {
             element.parentElement.remove();
@@ -12,10 +15,9 @@ function replaceText(element) {
 }
 
 function changeArticlesDisplay() {
-    console.log("dfd");
+    // if statment here
 
-
-    replaceText(document.body);
+    hideText(document.body);
 }
 
 // Floating button
@@ -36,7 +38,5 @@ document.body.appendChild(divButton);
 divButton.appendChild(img);
 divButton.appendChild(divStroke);
 
-
-//document.getElementById("floating-btn-switch").addEventListener("click", replaceText(document.body));
 
 document.getElementById("floating-btn-switch").addEventListener("click", changeArticlesDisplay);
