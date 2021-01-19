@@ -20,7 +20,16 @@ divButton.appendChild(divStroke);
 let areHidden = false;
 
 
-// Hiding text that is covid-related
+function changeArticlesDisplay() {
+	if (areHidden) {
+		areHidden = false;
+		showArticles(document.body);
+	} else {
+		areHidden = true;
+		hideArticles(document.body);
+	}
+}
+
 function hideArticles(element) {
 	// Hiding stroke line of the button
 	document.getElementById("button-stroke").classList.add("hidden");
@@ -35,7 +44,7 @@ function hideArticles(element) {
 	}
 }
 
-function showArticles(element) {
+function showArticles() {
 	let hiddenElements = document.querySelectorAll(".hidden");
 
 	hiddenElements.forEach(element => {
@@ -44,16 +53,6 @@ function showArticles(element) {
 
 	// Showing stroke line of the button
 	document.getElementById("button-stroke").classList.remove("hidden");
-}
-
-function changeArticlesDisplay() {
-	if (areHidden) {
-		areHidden = false;
-		showArticles(document.body);
-	} else {
-		areHidden = true;
-		hideArticles(document.body);
-	}
 }
 
 

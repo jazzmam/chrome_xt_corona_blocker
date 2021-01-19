@@ -1,16 +1,21 @@
 {
-    "manifest_version": 2,
-    "name": "Covid-19 News Blocker",
-    "version": "0.1.0",
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "js": [
-                "script.js"
-            ],
-            "css": [
-                "css/styles.css"
-            ]
-        }
-    ]
+	"manifest_version": 2,
+	"name": "Covid-19 News Blocker",
+	"version": "0.1.0",
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": [
+				"script.js"
+			],
+			"css": [
+				"css/styles.css"
+			]
+		}
+	],
+	"icons": {
+		"16": "covid-icon.png",
+		"48": "covid-icon.png",
+		"128": "covid-icon.png"
+	}
 }
