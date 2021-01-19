@@ -33,9 +33,10 @@
 }
 
 .button-stroke {
+	display: none;
 	position: fixed;
 	width: 65px;
-	height: 8px;
+	height: 7px;
 	top: 160px;
 	right: 130px;
 	background-color: #0077b6;
@@ -50,7 +51,3 @@
 	-ms-transform:
 	rotate(45deg); /* IE */
   }
-
-  .button-stroke:active {
-
-}

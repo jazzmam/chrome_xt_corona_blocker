@@ -11,6 +11,10 @@ function replaceText(element) {
     }
 }
 
+function changeArticlesDisplay() {
+    
+}
+
 // Floating button
 let divButton = document.createElement("div");
 divButton.classList.add('floating-btn-switch');
@@ -28,3 +32,6 @@ divStroke.id = "button-stroke";
 document.body.appendChild(divButton);
 divButton.appendChild(img);
 divButton.appendChild(divStroke);
+
+
+divButton.addEventListener("click", changeArticlesDisplay);
