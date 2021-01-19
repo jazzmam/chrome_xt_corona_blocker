@@ -50,3 +50,7 @@
 	-ms-transform:
 	rotate(45deg); /* IE */
   }
+
+.hidden {
+	display: none;
+}
