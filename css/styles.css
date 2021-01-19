@@ -6,7 +6,7 @@
 .floating-btn-switch {
 	position: fixed;
 	width: 65px;
-    height: 65px;
+	height: 65px;
 	top: 130px;
 	right: 130px;
 	background-color: #00aee3;
@@ -18,7 +18,7 @@
 }
 
 .floating-btn-switch:hover {
-	background-color: #0085ad;
+	background-color: #48cae4;
 }
 
 .floating-btn-switch:active {
@@ -27,16 +27,30 @@
 
 .floating-btn-switch img {
 	width: 35px;
-    height: 35px;
-    margin: 15px;
+	height: 35px;
+	margin: 15px;
 	color: #fff;
 }
 
 .button-stroke {
-	position: absolute;
-	background-color: blue;
-	width: 6px;
-	top: 91px;
-	bottom: 0px;
-	left: 50%;
+	position: fixed;
+	width: 65px;
+	height: 8px;
+	top: 160px;
+	right: 130px;
+	background-color: #0077b6;
+	transform:
+	rotate(45deg);
+	-webkit-transform:
+	rotate(45deg); /* WebKit */
+	-moz-transform:
+	rotate(45deg); /* Mozilla */
+	-o-transform:
+	rotate(45deg); /* Opera */
+	-ms-transform:
+	rotate(45deg); /* IE */
   }
+
+  .button-stroke:active {
+
+}

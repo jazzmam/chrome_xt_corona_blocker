@@ -27,3 +27,4 @@ divStroke.id = "button-stroke";
 
 document.body.appendChild(divButton);
 divButton.appendChild(img);
+divButton.appendChild(divStroke);
