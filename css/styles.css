@@ -22,8 +22,9 @@
 }
 
 .floating-btn-switch:active {
-	transform: scale(0.9);
+	background-color: #0a4557;
 }
+
 
 .floating-btn-switch img {
 	width: 35px;
